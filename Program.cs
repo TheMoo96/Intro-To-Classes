@@ -21,7 +21,7 @@ namespace classes
             catch(ArgumentOutOfRangeException e)
             {
                 Console.WriteLine("Exception caught creating account with negative balance.");
-                Console.WriteLine(e.ToString());
+                //Console.WriteLine(e.ToString());
             }
 
             //Test for a negative balance
@@ -32,8 +32,10 @@ namespace classes
             catch (InvalidOperationException e)
             {
                 Console.WriteLine("Exception caught trying to overdraw");
-                Console.WriteLine(e.ToString());
+                //Console.WriteLine(e.ToString());
             }
+            finally
+            { }
         }
     }
 }
